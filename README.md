@@ -1,4 +1,4 @@
-# aliclound_ShareLaTeX_CentOS7
+# aliclound_ShareLaTeX_CentOS 7.4
 # 安装过程如果有报错，请看最后面的解法，本人费劲尽力气找到有效的
 # 安装Docker
 ## 1. 查看linux发行版，内核
@@ -76,7 +76,8 @@
     第四步：启动docker容器　输入命令 “ systemctl start docker ”
     第五步：检查docker容器是否启动成功　查看容器状态，输入命令 “ systemctl status docker ”
     
-    
+## 5
+    还有问题，就试试更新一下内核，或者根据报错码去找找其他的解法，以上是本人实作成功的流程和结果
 
     
     
