@@ -1,4 +1,5 @@
 # aliclound_ShareLaTeX_CentOS7
+＃　安装过程如果有报错，请看最后面的解法，本人费劲尽力气找到有效的
 # 安装Docker
 ## 1. 查看linux发行版，内核
     [root@docker~]# cat /etc/redhat-release  #查看版本号
