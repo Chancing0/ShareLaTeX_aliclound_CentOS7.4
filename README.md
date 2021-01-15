@@ -55,18 +55,15 @@
         本地端举例　：　http://localhost/user/activate?token=243cd23a1e1dc463bcb7aa4dcf0e5217f37fa31da752f2a2be8a3200660cab6e&user_id=6001e77236d13300739df019
         外网端举例　：　http://ＩＰｖ４/user/activate?token=243cd23a1e1dc463bcb7aa4dcf0e5217f37fa31da752f2a2be8a3200660cab6e&user_id=6001e77236d13300739df019　，把你外网IP写进去就行
  # Error & Solution
-## 1
-    curl: (7) Failed to connect to raw.githubusercontent.com port 443: Connection refused
+## 1．curl: (7) Failed to connect to raw.githubusercontent.com port 443: Connection refused
     原因是DNS被污染，所以域名查不到真正IP,解决方法如下：
     sudo vim /etc/hosts
     # 加上一行，直接手动查到的ＩＰ和域名记录，通过　https://www.ipaddress.com/　去查找　raw.githubusercontent.com　的IP,该IP会因为你所在国家地区不同而不同，所以要你服务器当国家地区所查到的IP即可
     199.232.28.133 raw.githubusercontent.com
-## 2
-    Docker Compose build fails: "Top level object in DockerFile needs to be an object not '<type 'str'>
+## 2．Docker Compose build fails: "Top level object in DockerFile needs to be an object not '<type 'str'>
     原因：docker-compose.yml　文件下载不正确，解法是：
     在[docker-compose.yml](https://github.com/overleaf/overleaf/blob/master/docker-compose.yml)下载文件复制里面的内容，本专案也有提供在上面文件列表里供下载。然后在~/docker/sharelatex路径下新建docker-compose.yml并且 chmod其具有可执行权限，重新执行sudo docker-compose up即可~
-## 4
-    Job for docker.service failed because the control process exited with error code. See "systemctl status docker.service" and "journalctl -xe" for details.
+## 3．Job for docker.service failed because the control process exited with error code. See "systemctl status docker.service" and "journalctl -xe" for details.
     $ systemctl status docker.service
     看到　Failed to start Docker Application Container Engine　　解法是重新安装docker即可，这很快很简单
     yum remove docker-* 
@@ -76,8 +73,7 @@
     第四步：启动docker容器　输入命令 “ systemctl start docker ”
     第五步：检查docker容器是否启动成功　查看容器状态，输入命令 “ systemctl status docker ”
     
-## 5
-    还有问题，就试试更新一下内核，或者根据报错码去找找其他的解法，以上是本人实作成功的流程和结果
+## 4.还有问题，就试试更新一下内核，或者根据报错码去找找其他的解法，以上是本人实作成功的流程和结果
 
     
     
