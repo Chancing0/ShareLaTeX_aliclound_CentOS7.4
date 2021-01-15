@@ -48,6 +48,7 @@
         tlmgr update --self --all 
     5. 安装完整 TexLive　这个过程很久，大概一两个小时
         tlmgr install scheme-full 
+        exit
 # 以上都OK了，就开始使用吧
         重启一下你的服务器，然后确认docker有在正常运行，没有就手动运行一下。　
         ##　如何设定管理员账户
