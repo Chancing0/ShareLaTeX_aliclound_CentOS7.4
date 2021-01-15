@@ -46,11 +46,11 @@
         tlmgr install scheme-full 
 # 以上都OK了，就开始使用吧
         重启一下你的服务器，然后确认docker有在正常运行，没有就手动运行一下。　
-        ＃＃　如何设定管理员账户
+        ##　如何设定管理员账户
         到浏览器里面访问/launchpad，在线创建 Admin 用户。本地端就用 ：http://localhost:80/launchpad   (端口默认是使用80，除非你自己更改设定)　　
         云或者服务器端等具有公网IP的 ： http://IPV4/launchpad   (IPV4 请改成你的服务器IP地址)　　
         如果没有出现再执行　docker exec sharelatex /bin/bash -c "cd /var/www/sharelatex; grunt user:create-admin --email=joe@example.com"　创建管理员账户，再上述登陆网页设置密码
-        ＃＃　如何添加普通用户
+        ##　如何添加普通用户
         使用管理员登陆后，左上角的 admin 里有 manage users ,手动输入新建的账户名字，点击注册，下面就会有一串网址，复制登陆就是设置该账户密码的界面。
         本地端举例　：　http://localhost/user/activate?token=243cd23a1e1dc463bcb7aa4dcf0e5217f37fa31da752f2a2be8a3200660cab6e&user_id=6001e77236d13300739df019
         外网端举例　：　http://ＩＰｖ４/user/activate?token=243cd23a1e1dc463bcb7aa4dcf0e5217f37fa31da752f2a2be8a3200660cab6e&user_id=6001e77236d13300739df019　，把你外网IP写进去就行
