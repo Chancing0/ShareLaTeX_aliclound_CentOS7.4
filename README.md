@@ -1,4 +1,4 @@
-# aliclound_ShareLaTeX_CentOS 7.4
+# ShareLaTeX_aliclound_CentOS7.4
 # 安装过程如果有报错，请看最后面的解法，本人费劲尽力气找到有效的
 # 安装Docker
 ## 1. 查看linux发行版，内核
