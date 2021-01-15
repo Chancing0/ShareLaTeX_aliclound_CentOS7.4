@@ -26,7 +26,7 @@
     cd ~/docker/sharelatex
     curl -O https://github.com/sharelatex/sharelatex/raw/master/docker-compose.yml
     sudo docker-compose up #安装启动ShareLaTeX
-### 如果使用[docker-compose.yml](https://github.com/overleaf/overleaf/blob/master/docker-compose.yml) 安装失败，在docker-compose.yml下载文件复制里面的内容，然后在~/docker/sharelatex路径下新建docker-compose.yml并且 chmod其具有可执行权限，重新执行sudo docker-compose up即可~ 
+### 如果使用docker-compose.yml 安装失败，在docker-compose.yml[docker-compose.yml](https://github.com/overleaf/overleaf/blob/master/docker-compose.yml)下载文件复制里面的内容，然后在~/docker/sharelatex路径下新建docker-compose.yml并且 chmod其具有可执行权限，重新执行sudo docker-compose up即可~ 
 # 使用
     到浏览器里面访问/launchpad，创建 Admin 用户。本地端就用 ：http://localhost:80/launchpad    (端口默认是使用80，除非你自己更改设定)
     云或者服务器端等具有公网IP的 ： http://IPV4/launchpad   (IPV4 请改成你的服务器IP地址)
