@@ -72,8 +72,7 @@
     第三步：通过管理员安装 docker 容器　输入命令 “ sudo yum install docker ”
     第四步：启动docker容器　输入命令 “ systemctl start docker ”
     第五步：检查docker容器是否启动成功　查看容器状态，输入命令 “ systemctl status docker ”
-    
-## 4.还有问题，就试试更新一下内核，或者根据报错码去找找其他的解法，以上是本人实作成功的流程和结果
+## 4. 还有问题，就试试更新一下内核，或者根据报错码去找找其他的解法，以上是本人实作成功的流程和结果
 
     
     
